@@ -1,0 +1,5 @@
+{
+    "board": "arduino:avr:uno",
+    "port": "COM9",
+    "sketch": "Blink.ino"
+}
