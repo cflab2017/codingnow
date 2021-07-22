@@ -1,0 +1,7 @@
+{
+    "board": "arduino:avr:uno",
+    "port": "COM6",
+    "sketch": "car_controller.ino",
+    "output": "./build",
+    "programmer": "arduino:avrispmkii"
+}
