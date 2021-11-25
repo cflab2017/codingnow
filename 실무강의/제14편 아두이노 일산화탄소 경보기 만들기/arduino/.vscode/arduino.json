@@ -1,0 +1,6 @@
+{
+    "port": "COM10",
+    "board": "arduino:avr:uno",
+    "programmer": "arduino:avrispmkii",
+    "sketch": "newping\\newping.ino"
+}
