@@ -19,8 +19,8 @@
 
 #include "camera_pins.h"
 
-const char* ssid      = "skydown";
-const char* password  = "hjh96426340!";
+const char* ssid      = "test";
+const char* password  = "test1234";
 
 void startCameraServer();
 

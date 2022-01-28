@@ -4,8 +4,8 @@
 
 //LIB https://github.com/yoursunny/esp32cam
 
-const char* WIFI_SSID = "skydown";
-const char* WIFI_PASS = "hjh96426340!";
+const char* WIFI_SSID = "test";
+const char* WIFI_PASS = "test1234";
 
 WebServer server(80); //servidor en el puerto 80
 
