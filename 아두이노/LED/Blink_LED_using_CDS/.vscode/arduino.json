@@ -1,0 +1,6 @@
+{
+    "board": "arduino:avr:uno",
+    "programmer": "avrispmkii",
+    "sketch": "Blink_LED_using_CDS.ino",
+    "port": "COM3"
+}
