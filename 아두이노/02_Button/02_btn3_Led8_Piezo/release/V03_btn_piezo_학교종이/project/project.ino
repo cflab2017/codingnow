@@ -42,12 +42,9 @@ void loop() {
   int btn_0 = digitalRead(BUTTON_0);
   int btn_1 = digitalRead(BUTTON_1);
   int btn_2 = digitalRead(BUTTON_2);
-  // Serial.print("btn_0 : "+String(btn_0)+",");
-  // Serial.print("btn_1 : "+String(btn_1)+",");
-  // Serial.print("btn_2 : "+String(btn_2)+",");
-  // Serial.println();
 
   if(btn_0){
+    Serial.println("btn_0 : "+String(btn_0));
     for(i = 0; i<TONES_MAX; i++)
     {
       tone(PIN_PIEZO,Tones[i]);
@@ -57,6 +54,7 @@ void loop() {
   }
 
   if(btn_1){
+    Serial.println("btn_1 : "+String(btn_1));
     for(i = TONES_MAX-1; i >= 0; i--)
     {
       tone(PIN_PIEZO,Tones[i]);
@@ -66,6 +64,7 @@ void loop() {
   }
 
   if(btn_2){
+    Serial.println("btn_2 : "+String(btn_2));
     for(i = 0; i < sizeof(play_00)/sizeof(int); i++)
     {
       Serial.println(play_00[i]);

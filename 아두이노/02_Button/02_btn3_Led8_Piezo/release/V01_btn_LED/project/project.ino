@@ -77,20 +77,18 @@ void loop() {
   int btn_1 = digitalRead(BUTTON_1);
   int btn_2 = digitalRead(BUTTON_2);
 
-  Serial.print("btn_0 : "+String(btn_0)+",");
-  Serial.print("btn_1 : "+String(btn_1)+",");
-  Serial.print("btn_2 : "+String(btn_2)+",");
-  Serial.println();
-
   if(btn_0){    
+    Serial.println("btn_0 : "+String(btn_0));
     led_right();
   }
 
   if(btn_1){    
+    Serial.println("btn_1 : "+String(btn_1));
     led_all_blink();
   }
 
   if(btn_2){  
+    Serial.println("btn_2 : "+String(btn_2));
     led_left();  
   }
 }
