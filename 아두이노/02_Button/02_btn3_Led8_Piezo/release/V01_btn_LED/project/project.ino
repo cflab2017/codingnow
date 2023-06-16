@@ -82,15 +82,15 @@ void loop() {
   Serial.print("btn_2 : "+String(btn_2)+",");
   Serial.println();
 
-  // if(btn_0){    
-  //   led_right();
-  // }
+  if(btn_0){    
+    led_right();
+  }
 
-  // if(btn_1){    
-  //   led_all_blink();
-  // }
+  if(btn_1){    
+    led_all_blink();
+  }
 
-  // if(btn_2){  
-  //   led_left();  
-  // }
+  if(btn_2){  
+    led_left();  
+  }
 }
