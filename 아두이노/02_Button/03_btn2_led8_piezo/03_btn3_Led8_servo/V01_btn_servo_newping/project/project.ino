@@ -7,12 +7,6 @@
 /*서보모터*/
 #define PIN_SERVO 12
 
-/*LED*/
-// #define MAX_LED 8
-// unsigned char arry_led[MAX_LED] = {
-// 2,3,4,5,6,7,8,9
-// };
-
 Servo myservo;
 int servo_angle = 0; //서보모터의 현재 각도를 저장하는 변수
 
@@ -29,11 +23,6 @@ void setup() {
   pinMode(PIN_TRIG, OUTPUT);
   pinMode(PIN_ECHO, INPUT);
 
-  // for(i=0; i<MAX_LED; i++)
-  // {
-  //   pinMode(arry_led[i], OUTPUT);
-  // }
-
   Serial.println("start");
 }
 
@@ -46,10 +35,6 @@ void loop() {
   digitalWrite(PIN_TRIG, LOW);
   cycletime = pulseIn(PIN_ECHO, HIGH); //아두이노 핀으로 입력되는 펄스의 시간을 측정하는 함수
   distance = ((340 * cycletime) / 10000) / 2;  //거리 = 속력 X 시간
-
-  // Serial.print("Distance:");
-  // Serial.print(distance);
-  // Serial.println("cm");
 
   if(distance < 10){
     if (servo_angle != 170)
