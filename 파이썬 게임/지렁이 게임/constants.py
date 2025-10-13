@@ -1,0 +1,27 @@
+
+import pygame
+
+# 화면 크기
+SCREEN_WIDTH = 800
+SCREEN_HEIGHT = 660 # UI Panel(60) + Game Area(600)
+UI_PANEL_HEIGHT = 60
+
+# 격자 크기
+GRID_SIZE = 20
+GRID_WIDTH = SCREEN_WIDTH // GRID_SIZE
+GRID_HEIGHT = (SCREEN_HEIGHT - UI_PANEL_HEIGHT) // GRID_SIZE
+
+# 색상
+BLACK = (0, 0, 0)
+WHITE = (255, 255, 255)
+GREEN = (0, 255, 0)
+RED = (255, 0, 0)
+BLUE = (0, 0, 255)
+ORANGE = (255, 165, 0)
+YELLOW = (255, 255, 0)
+
+# 방향
+UP = (0, -1)
+DOWN = (0, 1)
+LEFT = (-1, 0)
+RIGHT = (1, 0)
