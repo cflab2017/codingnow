@@ -107,6 +107,8 @@ def main():
             if game.level_up_timer > 0:
                 level_up_text = game_over_font.render("LEVEL UP!", True, WHITE)
                 screen.blit(level_up_text, (SCREEN_WIDTH // 2 - level_up_text.get_width() // 2, SCREEN_HEIGHT // 2 - 50))
+        
+        pygame.draw.rect(screen, WHITE, (0, 0, SCREEN_WIDTH, SCREEN_HEIGHT), 5)
 
         pygame.display.flip()
 
